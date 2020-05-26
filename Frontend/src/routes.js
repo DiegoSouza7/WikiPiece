@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import PrivateRoute from './auth'
 import RouteSessions from './authSession'
+import Redirects from './Redirect'
 import Index from './pages/Index'
 import Search from './pages/Search'
 import PersonagensShow from './pages/PersonagensShow'
@@ -79,6 +80,8 @@ export default function Routes() {
         <PrivateRoute path="/adm/update/tripulacoes/:nome" exact component={AdmUpdateTripulações} />
         <PrivateRoute path="/adm/update/personagens/:nome" exact component={AdmUpdatePersonagens} />
         <PrivateRoute path="/adm/update/recompensas/:id" exact component={AdmUpdateRecompensas} />
+
+        <Route component={Redirects} />
       </Switch>
     </BrowserRouter>
   )
