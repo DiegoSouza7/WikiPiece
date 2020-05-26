@@ -40,7 +40,7 @@ Projeto desenvolvido para estudo do React.js utilizando uma api feita em Node.js
 
 - PORT= porta que o servidor irá rodar.
 - ACEPT_CORS= url da aplicação frontend.
-- PG_CONNECTION_STRING= url do banco de dados PostgreSQL. Essa url deve conter os dados do banco de dados como nome, senha e dendereço.
+- PG_CONNECTION_STRING= url do banco de dados PostgreSQL. Essa url deve conter os dados do banco de dados como nome, senha e endereço.
 - APP_URL= a url da api backend. 
 - STORAGE_TYPE= 's3' para utilizar o serviço de salvar imagens da S3 e 'local' para salvar as imagens localmente na pasta tmp/uploads
 
@@ -62,4 +62,4 @@ Projeto desenvolvido para estudo do React.js utilizando uma api feita em Node.js
 - Utilize o comando 'npm start' no backend para ligar a api.
 - Utilize o comando 'npm start' no frontend para abrir a aplicação no seu navegador.
 - Utilize as query do arquivo database.sql do backend para criar o banco de dados da aplicação.
-- Para ter acesso a área administrativa, deve ser criar um usuário e senha com query no banco de dados e após isso, entrar na rota /login da aplicação e alterar a senha do usuário criado para então utilizar o mesmo para logar na aplicação. Obs: Faça isso apenas se nunca alterou a senha desse usuário após sua criação.
+- Para ter acesso à área administrativa, deve ser criar um usuário e senha com query no banco de dados e após isso, entrar na rota /login da aplicação e alterar a senha do usuário criado para então utilizar o mesmo para logar na aplicação. Obs: Faça isso apenas se nunca alterou a senha desse usuário após sua criação.
