@@ -1,0 +1,25 @@
+const express = require('express')
+const routes = express.Router()
+
+const adm = require('./adm')
+const Index = require('../controllers/Index')
+const Fruta = require('../controllers/Frutas')
+const Tripulacao = require('../controllers/Tripulacao')
+const Personagem = require('../controllers/Personagem')
+const Recompensa = require('../controllers/Recompensa')
+const Auth = require('../controllers/Auth')
+
+routes.use('/adm', adm)
+routes.get('/Auth', Auth)
+routes.get('/search', Index.search)
+routes.get('/index', Index.index)
+routes.get('/frutas', Index.fruta)
+routes.get('/recompensas', Index.recompensa)
+routes.get('/recompensasAdm', Index.recompensasAdm)
+routes.get('/tripulacao', Index.tripulacao)
+routes.get('/recompensas/:id', Recompensa.show)
+routes.get('/personagens/:nome', Personagem.show)
+routes.get('/frutas/:nome', Fruta.show)
+routes.get('/tripulacao/:nome', Tripulacao.show)
+
+module.exports = routes

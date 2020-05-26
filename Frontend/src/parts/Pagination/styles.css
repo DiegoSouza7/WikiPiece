@@ -1,0 +1,9 @@
+.total .paginate {
+    position: relative;
+}
+
+.total .paginate .MuiPagination-ul {
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}

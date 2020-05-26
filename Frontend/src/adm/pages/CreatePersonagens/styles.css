@@ -1,0 +1,152 @@
+.total {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.total .createPersonagem {
+    margin-top: 32px;
+}
+
+.total .createPersonagem form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.total .createPersonagem form input {
+    width: 500px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 2px;
+    height: 30px;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.total .createPersonagem form .descricao {
+    width: 500px;
+    max-width: 500px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 2px;
+    height: 30px;
+    padding: 4px 8px;
+    font-size: 14px;
+    height: 200px;
+}
+
+.total .createPersonagem form span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.total .createPersonagem form h1 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.total .createPersonagem .photo {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 10px;
+    position: relative;
+}
+
+.total .createPersonagem .photo-upload {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.total .createPersonagem form svg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 400%;
+    color: rgb(99, 99, 99);
+    cursor: pointer;
+}
+
+.total .createPersonagem form input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.total .createPersonagem form .photo #photo-preview {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.total .createPersonagem form button {
+    margin-top: 12px;
+    padding: 8px;
+    color: white;
+    background-color: rgb(14, 12, 37);
+    border-radius: 5px;
+    padding: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 102.8px;
+    height: 31.38px;
+    border-radius: 5px;
+    box-shadow: 3px 1px 6px -4px black;
+}
+
+/* select */
+.select {
+    position: relative;
+    max-width: 500px;
+}
+
+.react-select__indicators {
+    width: 50px;
+    max-height: 50px;
+    visibility: hidden;
+}
+
+
+
+.select .react-select__control,
+.css-12jo7m5,
+.css-xb97g8,
+.react-select__value-container {
+    max-height: 50px;
+    max-width: 500px;
+}
+
+.react-select__value-container {
+    display: flex;
+    position: relative;
+}
+
+.react-select__value-container .css-1rhbuit-multiValue {
+    width: 100px;
+    max-height: 40px;
+}
+
+.css-xb97g8 {
+    width: 30px;
+    height: 30px;
+}
+
+.css-12jo7m5 {
+    margin-top: 5px;
+}
+
+.css-tlfecz-indicatorContainer {
+    min-width: 50px;
+}
+
+

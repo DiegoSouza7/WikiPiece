@@ -1,0 +1,31 @@
+.infos .cabecalho .imgFruta {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+}
+
+.usuariosFruta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.usuariosFruta img {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
+    cursor: pointer;
+}
+
+.usuariosFruta p {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}

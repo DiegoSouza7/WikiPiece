@@ -1,0 +1,43 @@
+.infos {
+    margin-top: 40px;
+}
+
+.infos h1 {
+    font-size: 32px;
+}
+
+.infos .cabecalho {
+    text-align: center;
+}
+
+.infos .cabecalho img {
+    margin: 30px;
+    max-width: 80%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
+}
+
+.total .infos p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.infos .nomeFruta {
+    cursor: pointer;
+}
+
+.infos .recompensas {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 15px;
+}
+
+.infos .recompensas img {
+    max-height: 100%;
+    object-fit: contain;
+}
