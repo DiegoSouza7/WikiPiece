@@ -59,9 +59,9 @@ export default function PersonagensShow() {
 			<div>
 				<p><strong>Recompensa Atual:</strong> {format(personagem.recompensas[0].valor)}</p>
 				<p><strong>Cartazes de Procurado:</strong></p>
-				<div className="recompensas">
+				<div className="recompensasShow">
 				{personagem.recompensas.map(recompensa => (
-					<img key={recompensa.id} src={recompensa.path} alt="Imagem de Recompensa" />
+					<img className="imgRecompensa" key={recompensa.id} src={recompensa.path} alt="Imagem de Recompensa" />
 				))}
 				</div>
 			</div>

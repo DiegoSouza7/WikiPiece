@@ -28,16 +28,16 @@
     cursor: pointer;
 }
 
-.infos .recompensas {
+.infos .recompensasShow {
     width: 100%;
-    height: 200px;
+    height: 250px;
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(6, 1fr);
     margin-bottom: 15px;
 }
 
-.infos .recompensas img {
+.total .infos .recompensasShow .imgRecompensa {
     max-height: 100%;
     object-fit: contain;
 }
