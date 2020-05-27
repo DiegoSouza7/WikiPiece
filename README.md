@@ -5,6 +5,10 @@ Projeto desenvolvido para estudo do React.js utilizando uma api feita em Node.js
 - A aplicação está hospedada no site: https://wikipiece.herokuapp.com/
 - Como o heroku desliga a aplicação quando a mesma fica 30 minutos sem acesso, pode demorar um pouco para carregar as informações do site quando entrar.
 
+![gif](https://github.com/DiegoSouza7/WikiPiece/blob/master/Desktop-2020.05.27-17.51.42.13_Trim_Trim.gif)
+
+![gif](https://github.com/DiegoSouza7/WikiPiece/blob/master/Desktop-2020.05.27-17.51.42.13_Trim_Trim-_2_.gif)
+
 # Banco de dados utilizado:
 :elephant: PostgreSQL
 
