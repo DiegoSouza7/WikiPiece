@@ -1,15 +1,15 @@
 .personagens {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 30px;
-    justify-items: center;
 }
 
 .personagem {
-    width: 200px;
+    width: 250px;
     height: 250px;
     text-align: center;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -39,4 +39,11 @@
     align-items: center;
     justify-content: center;
     margin: 40px 0;
+}
+
+@media (max-width: 490px) {
+
+    .personagens {
+        justify-items: center;
+    }
 }

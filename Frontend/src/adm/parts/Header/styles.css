@@ -38,6 +38,7 @@ img {
 }
 
 nav.primary {
+    width: 100%;
     position: relative;
     justify-self: right;
 }
@@ -47,7 +48,8 @@ nav.primary ul {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    width: 1040px;
+    width: 100%;
+    max-width: 1040px;
 }
 
 nav.primary ul .escolha a {

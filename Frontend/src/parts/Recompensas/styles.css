@@ -1,10 +1,14 @@
 .recompensas {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 30px;
-    justify-items: center;
+}
+
+.recompensas .recompensa {
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .recompensas .recompensa img {
@@ -22,4 +26,11 @@
     align-items: center;
     justify-content: center;
     margin: 40px 0;
+}
+
+@media (max-width: 370px) {
+
+    .recompensas {
+        justify-items: center;
+    }
 }

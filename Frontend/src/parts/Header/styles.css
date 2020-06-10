@@ -36,7 +36,8 @@ nav.primary ul {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    width: 1040px;
+    width: 100%;
+    max-width: 1040px;
 }
 
 nav.primary ul .escolha a {
@@ -45,7 +46,8 @@ nav.primary ul .escolha a {
 
 .escolha .submenu {
     position: absolute;
-    width: 160px;
+    width: 100%;
+    max-width: 160px;
     display: block;
     background: rgb(255, 123, 0);
     border-radius: 4px;
@@ -85,7 +87,8 @@ nav.primary ul .escolha a {
     display: flex;
 }
 .header form input {
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
     height: 30px;
     margin-right: 5px;
     font-size: 12px;
