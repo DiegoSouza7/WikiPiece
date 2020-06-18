@@ -29,3 +29,21 @@
     font-weight: bold;
     text-align: center;
 }
+
+@media (max-width: 920px) {
+    .usuariosFruta {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .usuariosFruta {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .usuariosFruta {
+    grid-template-columns: 1fr;
+    }
+}

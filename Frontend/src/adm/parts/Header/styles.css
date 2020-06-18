@@ -1,27 +1,3 @@
-img {
-    width: 100%;
-    height: 250px;
-}
-
-.header {
-    width: 100%;
-    height: 50px;
-    background-color: rgb(255, 123, 0);
-    box-shadow: 3px 1px 6px -4px rgb(255, 123, 0);
-    display: flex;    
-    text-align: center;
-    align-items: center;
-}
-
-.links {
-    font-size: 18px;
-    font-weight: bold;
-    color: rgb(32, 27, 27);
-    text-transform: capitalize;
-    transition: 200ms;
-    cursor: pointer;
-}
-
 .top {
     font-size: 18px;
     font-weight: bold;
@@ -30,11 +6,6 @@ img {
     transition: 200ms;
     cursor: pointer;
     padding-left: 8px;
-}
-
-.links:hover {
-    color: rgb(58, 56, 56);
-    font-weight: bold;
 }
 
 nav.primary {
@@ -96,15 +67,6 @@ nav.primary ul .escolha a {
     align-items: center;
     justify-content: center;
     display: flex;
-}
-.header form input {
-    width: 330px;
-    height: 30px;
-    margin-right: 5px;
-    font-size: 12px;
-    background-color: #f0f0f5;
-    align-items: center;
-    padding: 5px;
 }
 
 .header .buttonFilter {

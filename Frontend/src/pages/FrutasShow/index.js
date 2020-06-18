@@ -44,11 +44,10 @@ export default function PersonagensShow() {
 						<h1>{fruta.nome}</h1>
 						<img className="imgFruta" src={fruta.path} alt={fruta.nome}/>
 					</div>
-
-                    <p><strong>Tipo:</strong> {fruta.tipo}</p>
-                    <p><strong>Sobre: </strong>{fruta.descricao}</p>
-                    <p><strong>Usuários:</strong></p>
-                    {usuarios}
+					<p><strong>Tipo:</strong> {fruta.tipo}</p>
+					<p><strong>Sobre: </strong>{fruta.descricao}</p>
+					<p><strong>Usuários:</strong></p>
+					{usuarios}
 				</div>
 			</section>
 		)

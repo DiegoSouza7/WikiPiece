@@ -41,7 +41,7 @@
     margin: 40px 0;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 500px) {
 
     .frutas {
         justify-items: center;

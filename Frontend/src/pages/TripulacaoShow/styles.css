@@ -29,3 +29,10 @@
     font-weight: bold;
     text-align: center;
 }
+
+@media (max-width: 1060px) {
+    .infos .membrosTripulacao {
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+}

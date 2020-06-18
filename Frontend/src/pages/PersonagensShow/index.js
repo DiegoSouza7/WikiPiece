@@ -56,7 +56,7 @@ export default function PersonagensShow() {
 
 	if(personagem.recompensas) (
 		recompensa = (
-			<div>
+			<div className="divRecompensas">
 				<p><strong>Recompensa Atual:</strong> {format(personagem.recompensas[0].valor)}</p>
 				<p><strong>Cartazes de Procurado:</strong></p>
 				<div className="recompensasShow">
@@ -96,12 +96,12 @@ export default function PersonagensShow() {
 					{tripulacao}
 					{posicao}
 					{fruta}
-					{recompensa}
 					{alcunha}
 					{altura}
 					{nasceu}
 					<p><strong>Status: </strong>{personagem.status}</p>
 					<p><strong>Sobre: </strong>{personagem.descricao}</p>
+					{recompensa}
 				</div>
 			</section>
 		)

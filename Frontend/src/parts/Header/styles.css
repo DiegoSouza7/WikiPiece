@@ -19,6 +19,7 @@
     color: rgb(32, 27, 27);
     text-transform: capitalize;
     transition: 200ms;
+    cursor: pointer;
 }
 
 .links:hover {
@@ -86,8 +87,9 @@ nav.primary ul .escolha a {
     justify-content: center;
     display: flex;
 }
+
 .header form input {
-    width: 100%;
+    width: 330px;
     max-width: 330px;
     height: 30px;
     margin-right: 5px;
@@ -104,4 +106,101 @@ nav.primary ul .escolha a {
 
 .header .buttonFilter svg {
     align-items: center;
+}
+
+/* media */
+
+@media (max-width: 940px) {
+    .header .primary .escolha .submenu {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 880px) {
+    .total .header form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .header .primary .escolha .submenu {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        display: flex;
+        height: 110px;
+        align-items: initial;
+        text-align: left;
+    }
+    
+    .header .primary ul {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-flow: wrap-reverse;
+    }
+
+    .header .primary .escolha {
+        width: 200px;
+        padding-top: 5px;
+    }
+    
+    .header .primary .escolha .submenu {
+        margin-left: 23px;
+    }
+
+    .header form {
+        padding-left: 10px;
+        width: 100vw;
+    }
+
+    .total .header form input {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .header .primary .escolha {
+        width: 150px;
+    }
+
+    .header .primary .escolha .submenu {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header .primary .escolha .submenu {
+        max-width: 130px;
+    }
+
+    .total .header form input {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .header {
+        height: 130px;
+    }
+
+    .total .header form input {
+        width: 100%;
+    }
+
+    .header .primary .escolha {
+        width: 130px;
+        padding-right: 5px;
+    }
+
+    .header .primary .escolha .submenu {
+        max-width: 130px;
+    }
 }
