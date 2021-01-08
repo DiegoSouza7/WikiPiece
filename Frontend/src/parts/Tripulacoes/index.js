@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import api from '../../services/api'
-import Pagination from  '../../parts/Pagination'
+import Pagination from '../../parts/Pagination'
 
 import './styles.css'
 
@@ -9,7 +9,7 @@ export default function Index() {
   const [tripulacoes, setTripulacoes] = useState([])
   const [total, setTotal] = useState(0)
   const [offset, setOffset] = useState(0)
-  let {page} = useParams()
+  let { page } = useParams()
   page = page || 1
   const history = useHistory()
   const limit = 12
@@ -37,22 +37,22 @@ export default function Index() {
     history.push(`/Tripulacao/${nome}`)
   }
 
-  if((Math.ceil(total/limit)) > 1) (
-    paginate = (<Pagination total={Math.ceil(total/limit)} entidade={entidade} />)
+  if ((Math.ceil(total / limit)) > 1) (
+    paginate = (<Pagination total={Math.ceil(total / limit)} entidade={entidade} />)
   )
 
   return (
     <div>
       <div className="tripulacoes">
         {tripulacoes.map(tripulacao => (
-          <div className="tripulacao" onClick={()=> toShow(tripulacao.nome)} key={tripulacao.id}>
+          <div className="tripulacao" onClick={() => toShow(tripulacao.nome)} key={tripulacao.id}>
             <img src={tripulacao.path} alt={tripulacao.nome} />
             <p>{tripulacao.nome}</p>
           </div>
         ))}
       </div>
       <div className="paginate">
-      {paginate}
+        {paginate}
       </div>
     </div>
   )

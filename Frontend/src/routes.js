@@ -65,7 +65,7 @@ export default function Routes() {
         <RouteSessions path="/login" exact component={Login} />
         <RouteSessions path="/passwordReset" exact component={PasswordReset} />
         <RouteSessions path="/forgotPassword" exact component={ForgotPassword} />
-        
+
         <PrivateRoute path="/adm" exact component={AdmIndex} />
         <PrivateRoute path="/adm/frutas:page?" exact component={FrutasAdm} />
         <PrivateRoute path="/adm/tripulacao:page?" exact component={TripulaçõesAdm} />

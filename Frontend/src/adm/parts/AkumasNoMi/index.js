@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import api from '../../../services/api'
-import Pagination from  '../../parts/Pagination'
+import Pagination from '../../parts/Pagination'
 
 import './styles.css'
 
-export default function Frutas({grupo}) {
+export default function Frutas({ grupo }) {
   const [frutas, setFrutas] = useState([])
-  let {page} = useParams()
+  let { page } = useParams()
   page = page || 1
   const [total, setTotal] = useState(0)
   const history = useHistory()
@@ -16,9 +16,9 @@ export default function Frutas({grupo}) {
   let entidade = 'AkumaNoMi'
   let paginate = ''
 
-  if(grupo === 'Paramecia') entidade = 'Paramecia'
-  if(grupo === 'Logia') entidade = 'Logia'
-  if(grupo ==='Zoan') entidade = 'Zoan'
+  if (grupo === 'Paramecia') entidade = 'Paramecia'
+  if (grupo === 'Logia') entidade = 'Logia'
+  if (grupo === 'Zoan') entidade = 'Zoan'
 
   useEffect(() => {
     setOffset(limit * (page - 1))
@@ -32,8 +32,8 @@ export default function Frutas({grupo}) {
         grupo: grupo || 'todos'
       }
     }).then(response => {
-        setFrutas(response.data)
-        setTotal(response.data[0].total)
+      setFrutas(response.data)
+      setTotal(response.data[0].total)
     })
 
   }, [grupo, page, offset])
@@ -42,23 +42,23 @@ export default function Frutas({grupo}) {
     history.push(`/adm/update/frutas/${nome}`)
   }
 
-  if((Math.ceil(total/limit)) > 1) (
-    paginate = (<Pagination total={Math.ceil(total/limit)} entidade={entidade} />)
+  if ((Math.ceil(total / limit)) > 1) (
+    paginate = (<Pagination total={Math.ceil(total / limit)} entidade={entidade} />)
   )
 
   return (
     <div>
-    <div className="frutas">
-      {frutas.map(fruta => (
-        <div className="fruta" onClick={()=> toShow(fruta.nome)} key={fruta.id}>
-          <img src={fruta.path} alt={fruta.nome} />
-          <p>{fruta.nome}</p>
-        </div>
-      ))}
-    </div>
-    <div className="paginate">
-      {paginate}
-    </div>
+      <div className="frutas">
+        {frutas.map(fruta => (
+          <div className="fruta" onClick={() => toShow(fruta.nome)} key={fruta.id}>
+            <img src={fruta.path} alt={fruta.nome} />
+            <p>{fruta.nome}</p>
+          </div>
+        ))}
+      </div>
+      <div className="paginate">
+        {paginate}
+      </div>
     </div>
   )
 }

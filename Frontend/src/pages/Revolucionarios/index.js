@@ -6,10 +6,10 @@ import Personagens from '../../parts/Personagens'
 import './styles.css'
 
 export default function Revolucionarios() {
-	return (
-		<section className="total">
-			<HeaderIndex />
-			<Personagens grupo="Revolucionário" />
-		</section>
-	)
+  return (
+    <section className="total">
+      <HeaderIndex />
+      <Personagens grupo="Revolucionário" />
+    </section>
+  )
 }

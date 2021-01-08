@@ -1,36 +1,35 @@
 .recompensas {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 30px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 30px;
 }
 
 .recompensas .recompensa {
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .recompensas .recompensa img {
-    width: 170px;
-    object-fit: cover;
-    box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
-    cursor: pointer;
+  width: 170px;
+  object-fit: cover;
+  box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
+  cursor: pointer;
 }
 
 .total .paginate {
-    position: relative;
+  position: relative;
 }
 
 .total .paginate .MuiPagination-ul {
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
 }
 
 @media (max-width: 370px) {
-
-    .recompensas {
-        justify-items: center;
-    }
+  .recompensas {
+    justify-items: center;
+  }
 }

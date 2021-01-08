@@ -11,93 +11,93 @@ import { AiFillFileImage } from 'react-icons/ai'
 import './styles.css'
 
 export default function Index() {
-	const history = useHistory()
-	const formRef = useRef(null)
-    const Authorization = localStorage.getItem('Authorization')
+  const history = useHistory()
+  const formRef = useRef(null)
+  const Authorization = localStorage.getItem('Authorization')
 
-	useEffect(() => {
-		function Auth() {
-			api.get('Auth', {
-				headers: {
-					Authorization
-				}
-			}).then(response => {
-				return 
-			}).catch(err => {
-				localStorage.clear()
-				return history.push('/')
-			})
-		}
+  useEffect(() => {
+    function Auth() {
+      api.get('Auth', {
+        headers: {
+          Authorization
+        }
+      }).then(response => {
+        return
+      }).catch(err => {
+        localStorage.clear()
+        return history.push('/')
+      })
+    }
 
-		Auth()
-		
-	}, [Authorization, history])
-	
-	async function handleSubmit(data) {
-		try {
-			const schema = Yup.object().shape({
-				nome: Yup.string().required('* O nome é obrigatório'),
-				image: Yup.mixed().required('Envie uma imagem')
-			})
+    Auth()
 
-			await schema.validate(data, {
-				abortEarly: false
-			})
-			
-			const formData = new FormData();
-				formData.append("image", data.image)
-			
-			const imagem_id = await api.post('adm/imagem', formData, {
-				headers: {
-					Authorization
-				}
-			})
+  }, [Authorization, history])
 
-			data.imagem_id = imagem_id.data
-			
-			await api.post('adm/tripulacao', data, {
-				headers: {
-					Authorization
-				}
-			})
+  async function handleSubmit(data) {
+    try {
+      const schema = Yup.object().shape({
+        nome: Yup.string().required('* O nome é obrigatório'),
+        image: Yup.mixed().required('Envie uma imagem')
+      })
 
-			formRef.current.setErrors({})
+      await schema.validate(data, {
+        abortEarly: false
+      })
 
-			history.push('/adm')
-		} catch(err) {
-			if (err instanceof Yup.ValidationError) {
-				const errorMessages = {}
-				err.inner.forEach(error => {
-					errorMessages[error.path] = error.message
-				})
+      const formData = new FormData();
+      formData.append("image", data.image)
 
-				formRef.current.setErrors(errorMessages)
-			}
-		}
-	}
-	return (
-		<section className="total">
-			<HeaderIndex />
-			<div className="createTripulacao">
-				<Form ref={formRef} onSubmit={handleSubmit}>
-					<h1>Nome:</h1>
-					<Input name="nome" />
-					<h1>Imagem:</h1>
-					<div className="photo">
-						<div className="photo-upload">
-							<ImageInput name="image" />
-							<AiFillFileImage size={30} color="rgb(32, 27, 27)" />
-						</div>
-					</div>
-					<h1>Número de membros:</h1>
-					<Input name="numero_membros" />
-					<h1>Recompensa Total</h1>
-					<Input name="recompensa_total" />
-					<h1>Descrição: </h1>
-					<Textarea name="descricao" className="descricao" />
-					<button type="submit">Salvar</button>
-				</Form>
-			</div>
-		</section>
-	)
+      const imagem_id = await api.post('adm/imagem', formData, {
+        headers: {
+          Authorization
+        }
+      })
+
+      data.imagem_id = imagem_id.data
+
+      await api.post('adm/tripulacao', data, {
+        headers: {
+          Authorization
+        }
+      })
+
+      formRef.current.setErrors({})
+
+      history.push('/adm')
+    } catch (err) {
+      if (err instanceof Yup.ValidationError) {
+        const errorMessages = {}
+        err.inner.forEach(error => {
+          errorMessages[error.path] = error.message
+        })
+
+        formRef.current.setErrors(errorMessages)
+      }
+    }
+  }
+  return (
+    <section className="total">
+      <HeaderIndex />
+      <div className="createTripulacao">
+        <Form ref={formRef} onSubmit={handleSubmit}>
+          <h1>Nome:</h1>
+          <Input name="nome" />
+          <h1>Imagem:</h1>
+          <div className="photo">
+            <div className="photo-upload">
+              <ImageInput name="image" />
+              <AiFillFileImage size={30} color="rgb(32, 27, 27)" />
+            </div>
+          </div>
+          <h1>Número de membros:</h1>
+          <Input name="numero_membros" />
+          <h1>Recompensa Total</h1>
+          <Input name="recompensa_total" />
+          <h1>Descrição: </h1>
+          <Textarea name="descricao" className="descricao" />
+          <button type="submit">Salvar</button>
+        </Form>
+      </div>
+    </section>
+  )
 }

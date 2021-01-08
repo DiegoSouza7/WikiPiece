@@ -4,7 +4,7 @@ import Pagination from '@material-ui/lab/Pagination'
 
 import './styles.css'
 
-export default function PaginationRounded({total, entidade}) {
+export default function PaginationRounded({ total, entidade }) {
   const history = useHistory()
   const [page, setPage] = React.useState(1)
 

@@ -8,22 +8,22 @@ import './styles.css'
 
 export default function Header() {
   const formRef = useRef(null)
-	const history = useHistory()
+  const history = useHistory()
 
-	async function handleSubmit(data, {reset}) {
-		try {
+  async function handleSubmit(data, { reset }) {
+    try {
 
-      if(data.filter) history.push({
+      if (data.filter) history.push({
         pathname: '/adm/search',
         search: data.filter
       })
 
       reset()
-		} catch(err) {
+    } catch (err) {
       console.error(err)
-			}
+    }
   }
-  
+
   return (
     <div>
       <img src={bannerImg} alt="One Piece" />
@@ -31,7 +31,7 @@ export default function Header() {
         <nav className="primary">
           <ul>
             <li className="escolha">
-            <h1 className="top"> Criar</h1>
+              <h1 className="top"> Criar</h1>
               <ul className="submenu">
                 <li>
                   <Link className="links" to="/adm/create/frutas">Frutas</Link>
@@ -46,11 +46,11 @@ export default function Header() {
                   <Link className="links" to="/adm/create/recompensas">Recompensas</Link>
                 </li>
               </ul>
-          </li>
-          <li className="escolha">
-            <h1 className="top"> Atualizar</h1>
+            </li>
+            <li className="escolha">
+              <h1 className="top"> Atualizar</h1>
               <ul className="submenu">
-              <li>
+                <li>
                   <Link className="links" to="/adm/frutas">Frutas</Link>
                 </li>
                 <li>
@@ -63,25 +63,25 @@ export default function Header() {
                   <Link className="links" to="/adm/recompensas">Recompensas</Link>
                 </li>
               </ul>
-          </li>
-          <li className="escolha">
-            <h1 className="top"onClick={()=> {
-              localStorage.clear()
-              history.push('/')
-              return
-            }}> Sair</h1>
-          </li>
-          <li>
-          <Form ref={formRef} onSubmit={handleSubmit}>
-              <Input 
-                name="filter"
-                placeholder="Pesquise por personagens, tripulações e akumas no mi"
-              />
-              <button className="buttonFilter" type="submit">
-                <AiOutlineSearch size={30} color="rgb(32, 27, 27)" />
-              </button>
-            </Form>
-          </li>
+            </li>
+            <li className="escolha">
+              <h1 className="top" onClick={() => {
+                localStorage.clear()
+                history.push('/')
+                return
+              }}> Sair</h1>
+            </li>
+            <li>
+              <Form ref={formRef} onSubmit={handleSubmit}>
+                <Input
+                  name="filter"
+                  placeholder="Pesquise por personagens, tripulações e akumas no mi"
+                />
+                <button className="buttonFilter" type="submit">
+                  <AiOutlineSearch size={30} color="rgb(32, 27, 27)" />
+                </button>
+              </Form>
+            </li>
           </ul>
         </nav>
       </div>

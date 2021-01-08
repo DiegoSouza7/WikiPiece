@@ -6,10 +6,10 @@ import AkumasNoMi from '../../parts/AkumasNoMi'
 import './styles.css'
 
 export default function Index() {
-	return (
-		<section className="total">
-			<HeaderIndex />
-			<AkumasNoMi />
-		</section>
-	)
+  return (
+    <section className="total">
+      <HeaderIndex />
+      <AkumasNoMi />
+    </section>
+  )
 }

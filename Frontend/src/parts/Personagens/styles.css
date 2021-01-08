@@ -1,49 +1,48 @@
 .personagens {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 30px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
 }
 
 .personagem {
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .personagem img {
-    max-width: 200px;
-    max-height: 200px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-    box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
+  max-width: 200px;
+  max-height: 200px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
 }
 
 .personagem p {
-    font-size: 16px;
-    color: rgb(58, 56, 56);
-    font-weight: bold;
-    text-transform: capitalize;
-    padding-top: 8px;
+  font-size: 16px;
+  color: rgb(58, 56, 56);
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-top: 8px;
 }
 
 .total .paginate {
-    position: relative;
+  position: relative;
 }
 
 .total .paginate .MuiPagination-ul {
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
 }
 
 @media (max-width: 500px) {
-
-    .personagens {
-        justify-items: center;
-    }
+  .personagens {
+    justify-items: center;
+  }
 }

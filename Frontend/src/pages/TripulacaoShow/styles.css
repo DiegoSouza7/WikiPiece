@@ -1,38 +1,38 @@
 .infos .cabecalho .imgTripulacao {
-    max-width: 250px;
-    max-height: 250px;
-    width: 100%;
-    height: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  width: 100%;
+  height: 100%;
 }
 
 .membrosTripulacao {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
 }
 
 .membrosTripulacao img {
-    max-width: 200px;
-    max-height: 200px;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-    box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
-    cursor: pointer;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
+  cursor: pointer;
 }
 
 .membrosTripulacao p {
-    text-transform: capitalize;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
 
 @media (max-width: 1060px) {
-    .infos .membrosTripulacao {
+  .infos .membrosTripulacao {
     gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    }
+  }
 }

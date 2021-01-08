@@ -1,46 +1,45 @@
 .tripulacoes {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 30px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
 }
 
 .tripulacoes .tripulacao {
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .tripulacoes .tripulacao img {
-    width: 100%;
-    max-width: 210px;
-    max-height: 170px;
-    min-height: 170px;
-    object-fit: cover;
-    box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
-    cursor: pointer;
+  width: 100%;
+  max-width: 210px;
+  max-height: 170px;
+  min-height: 170px;
+  object-fit: cover;
+  box-shadow: 3px 1px 6px -4px rgb(58, 56, 56);
+  cursor: pointer;
 }
 
 .tripulacoes .tripulacao p {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: capitalize;
-    text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .total .paginate {
-    position: relative;
+  position: relative;
 }
 
 .total .paginate .MuiPagination-ul {
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
 }
 
 @media (max-width: 490px) {
-
-    .tripulacoes {
-        justify-items: center;
-    }
+  .tripulacoes {
+    justify-items: center;
+  }
 }

@@ -1,206 +1,194 @@
 .total img {
-    width: 100%;
-    height: 250px;
+  width: 100%;
+  height: 250px;
 }
 
 .header {
-    width: 100%;
-    height: 50px;
-    background-color: rgb(255, 123, 0);
-    box-shadow: 3px 1px 6px -4px rgb(255, 123, 0);
-    display: flex;    
-    text-align: center;
-    align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 123, 0);
+  box-shadow: 3px 1px 6px -4px rgb(255, 123, 0);
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .links {
-    font-size: 18px;
-    font-weight: bold;
-    color: rgb(32, 27, 27);
-    text-transform: capitalize;
-    transition: 200ms;
-    cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(32, 27, 27);
+  text-transform: capitalize;
+  transition: 200ms;
+  cursor: pointer;
 }
 
 .links:hover {
-    color: rgb(58, 56, 56);
-    font-weight: bold;
+  color: rgb(58, 56, 56);
+  font-weight: bold;
 }
 
 nav.primary {
-    position: relative;
-    justify-self: right;
+  position: relative;
+  justify-self: right;
 }
 
 nav.primary ul {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1040px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1040px;
 }
 
 nav.primary ul .escolha a {
-    padding-left: 8px;
+  padding-left: 8px;
 }
 
 .escolha .submenu {
-    position: absolute;
-    width: 100%;
-    max-width: 160px;
-    display: block;
-    background: rgb(255, 123, 0);
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px -2px rgb(255, 123, 0);
-    transition: all 200ms;
-    opacity: 0;
-    visibility: hidden;
-    text-align: left;
+  position: absolute;
+  width: 100%;
+  max-width: 160px;
+  display: block;
+  background: rgb(255, 123, 0);
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px -2px rgb(255, 123, 0);
+  transition: all 200ms;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
 }
 
-.escolha .submenu li a{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    border-top: 1px solid #eee;
-    display: inline-block;
-    width: 100%;
-    transition: 200ms;
+.escolha .submenu li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  border-top: 1px solid #eee;
+  display: inline-block;
+  width: 100%;
+  transition: 200ms;
 }
 
 .submenu li:first-child a {
-    border: none;
-    padding-top: 14px;
+  border: none;
+  padding-top: 14px;
 }
 
 .escolha:hover .submenu {
-    top: 1000;
-    opacity: 1;
-    visibility: initial;
+  top: 1000;
+  opacity: 1;
+  visibility: initial;
 }
 
 .header form {
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .header form input {
-    width: 330px;
-    max-width: 330px;
-    height: 30px;
-    margin-right: 5px;
-    font-size: 12px;
-    background-color: #f0f0f5;
-    align-items: center;
-    padding: 5px;
+  width: 330px;
+  max-width: 330px;
+  height: 30px;
+  margin-right: 5px;
+  font-size: 12px;
+  background-color: #f0f0f5;
+  align-items: center;
+  padding: 5px;
 }
 
 .header .buttonFilter {
-    background-color: rgb(255, 123, 0);
-    border: none;
+  background-color: rgb(255, 123, 0);
+  border: none;
 }
 
 .header .buttonFilter svg {
-    align-items: center;
+  align-items: center;
 }
 
 /* media */
 
 @media (max-width: 940px) {
-    .header .primary .escolha .submenu {
-        max-width: 150px;
-    }
+  .header .primary .escolha .submenu {
+    max-width: 150px;
+  }
 }
 
 @media (max-width: 880px) {
-    .total .header form input {
-        width: 100%;
-    }
+  .total .header form input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 800px) {
-    .header .primary .escolha .submenu {
-        max-width: 150px;
-    }
+  .header .primary .escolha .submenu {
+    max-width: 150px;
+  }
 }
 
 @media (max-width: 500px) {
-    .header {
-        display: flex;
-        height: 110px;
-        align-items: initial;
-        text-align: left;
-    }
-    
-    .header .primary ul {
-        flex-direction: column-reverse;
-        text-align: center;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        flex-flow: wrap-reverse;
-    }
-
-    .header .primary .escolha {
-        width: 200px;
-        padding-top: 5px;
-    }
-    
-    .header .primary .escolha .submenu {
-        margin-left: 23px;
-    }
-
-    .header form {
-        padding-left: 10px;
-        width: 100vw;
-    }
-
-    .total .header form input {
-        width: 100vw;
-    }
+  .header {
+    display: flex;
+    height: 110px;
+    align-items: initial;
+    text-align: left;
+  }
+  .header .primary ul {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-flow: wrap-reverse;
+  }
+  .header .primary .escolha {
+    width: 200px;
+    padding-top: 5px;
+  }
+  .header .primary .escolha .submenu {
+    margin-left: 23px;
+  }
+  .header form {
+    padding-left: 10px;
+    width: 100vw;
+  }
+  .total .header form input {
+    width: 100vw;
+  }
 }
 
 @media (max-width: 440px) {
-
-    .header .primary .escolha {
-        width: 150px;
-    }
-
-    .header .primary .escolha .submenu {
-        margin-left: 0px;
-    }
+  .header .primary .escolha {
+    width: 150px;
+  }
+  .header .primary .escolha .submenu {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 400px) {
-    .header .primary .escolha .submenu {
-        max-width: 130px;
-    }
-
-    .total .header form input {
-        width: 300px;
-    }
+  .header .primary .escolha .submenu {
+    max-width: 130px;
+  }
+  .total .header form input {
+    width: 300px;
+  }
 }
 
-
 @media (max-width: 370px) {
-    .header {
-        height: 130px;
-    }
-
-    .total .header form input {
-        width: 100%;
-    }
-
-    .header .primary .escolha {
-        width: 130px;
-        padding-right: 5px;
-    }
-
-    .header .primary .escolha .submenu {
-        max-width: 130px;
-    }
+  .header {
+    height: 130px;
+  }
+  .total .header form input {
+    width: 100%;
+  }
+  .header .primary .escolha {
+    width: 130px;
+    padding-right: 5px;
+  }
+  .header .primary .escolha .submenu {
+    max-width: 130px;
+  }
 }

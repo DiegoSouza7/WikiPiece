@@ -14,7 +14,7 @@ export default function Input({ name, ...rest }) {
   return (
     <div>
       <textarea ref={inputRef} defaultValue={defaultValue} {...rest} />
-      { error && <span style={{color: '#f00'}}>{error}</span> }
+      { error && <span style={{ color: '#f00' }}>{error}</span>}
     </div>
   )
 }
