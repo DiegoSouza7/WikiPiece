@@ -2,8 +2,7 @@
 Projeto desenvolvido para estudo do React.js utilizando uma api feita em Node.js.
 
 # Deploy
-- A aplicação está hospedada no site: https://wikipiece.herokuapp.com/
-- Como o heroku desliga a aplicação quando a mesma fica 30 minutos sem acesso, pode demorar um pouco para carregar as informações do site quando entrar.
+- A aplicação foi hospedada no heroku durante 1 ano e por motivo de inatividade nos serviços a qual ela utiliza e desejo de refatorar o projeto, ela foi retirada do ar.
 
 ![gif](https://github.com/DiegoSouza7/WikiPiece/blob/master/Desktop-2020.05.27-17.51.42.13_Trim_Trim.gif)
 
